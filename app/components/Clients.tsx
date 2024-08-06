@@ -23,7 +23,7 @@ const CLIENTS_ASSETS = [
     altText: "Logo do grupo Interalli",
   },
   {
-    src: "static/cliente3.png",
+    src: "/static/cliente3.png",
     altText: "Logo de Altair dos Santos",
   },
   {
@@ -49,6 +49,8 @@ export const Clients = () => {
             alt={client.altText}
             key={client.altText}
             className="object-fill max-w-48 mx-auto"
+            width={100}
+            height={100}
           />
         ))}
       </div>
