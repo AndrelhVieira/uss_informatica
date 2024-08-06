@@ -1,61 +1,82 @@
-function ArrowIcon() {
-  return (
-    <svg
-      width="12"
-      height="12"
-      viewBox="0 0 12 12"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        d="M2.07102 11.3494L0.963068 10.2415L9.2017 1.98864H2.83807L2.85227 0.454545H11.8438V9.46023H10.2955L10.3097 3.09659L2.07102 11.3494Z"
-        fill="currentColor"
-      />
-    </svg>
-  )
-}
+import Image from "next/image";
+import Link from "next/link";
+import Logo from "public/static/logo-uss-icon-com-info.png";
+import DevLogo from "public/static/andrevieira.png";
+
+const footerItems = {
+  "/": {
+    name: "Início",
+  },
+  "/servicos": {
+    name: "Serviços",
+  },
+  "/clientes": {
+    name: "Clientes",
+  },
+  "/contato": {
+    name: "Contato",
+  },
+};
 
 export default function Footer() {
   return (
-    <footer className="mb-16">
-      <ul className="font-sm mt-8 flex flex-col space-x-0 space-y-2 text-neutral-600 md:flex-row md:space-x-4 md:space-y-0 dark:text-neutral-300">
-        <li>
-          <a
-            className="flex items-center transition-all hover:text-neutral-800 dark:hover:text-neutral-100"
-            rel="noopener noreferrer"
-            target="_blank"
-            href="/rss"
-          >
-            <ArrowIcon />
-            <p className="ml-2 h-7">rss</p>
-          </a>
-        </li>
-        <li>
-          <a
-            className="flex items-center transition-all hover:text-neutral-800 dark:hover:text-neutral-100"
-            rel="noopener noreferrer"
-            target="_blank"
-            href="https://github.com/vercel/next.js"
-          >
-            <ArrowIcon />
-            <p className="ml-2 h-7">github</p>
-          </a>
-        </li>
-        <li>
-          <a
-            className="flex items-center transition-all hover:text-neutral-800 dark:hover:text-neutral-100"
-            rel="noopener noreferrer"
-            target="_blank"
-            href="https://vercel.com/templates/next.js/portfolio-starter-kit"
-          >
-            <ArrowIcon />
-            <p className="ml-2 h-7">view source</p>
-          </a>
-        </li>
-      </ul>
-      <p className="mt-8 text-neutral-600 dark:text-neutral-300">
-        © {new Date().getFullYear()} MIT Licensed
-      </p>
+    <footer>
+      <div className="flex flex-col mx-3 bg-white rounded-lg">
+        <div className="w-full draggable">
+          <div className="container flex flex-col mx-auto">
+            <div className="flex flex-col items-center w-full my-20">
+              <div className="flex flex-col items-center gap-6 mb-8">
+                <div className="flex flex-wrap items-center justify-center gap-5 lg:gap-12 gap-y-3 lg:flex-nowrap text-dark-grey-900">
+                  {Object.entries(footerItems).map(([path, { name }]) => {
+                    return (
+                      <Link
+                        key={path}
+                        href="path"
+                        className="text-gray-600 hover:text-gray-900"
+                      >
+                        {name}
+                      </Link>
+                    );
+                  })}
+                </div>
+              </div>
+              <div className="flex flex-col md:flex-row items-center mb-5">
+                <Image
+                  src={Logo}
+                  alt="Logo de USS Informática"
+                  width={300}
+                  height={300}
+                  className="w-40"
+                />
+              </div>
+              <div className="flex items-center">
+                <p className="text-base font-normal leading-7 text-center text-grey-700">
+                  © Todos os direitos reservados para USS Informatica
+                </p>
+              </div>
+              <div className="flex flex-col items-center mt-10 gap-5">
+                <Image
+                  src={DevLogo}
+                  alt="Logo de André Luiz Vieira"
+                  width={300}
+                  height={300}
+                  className="w-20"
+                />
+                <p>
+                  Desenvolvido por
+                  <a
+                    href="https://andreluizv.dev.br"
+                    className="font-bold text-primary ml-1"
+                    target="_blank"
+                  >
+                    André Luiz Vieira
+                  </a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </footer>
-  )
+  );
 }
