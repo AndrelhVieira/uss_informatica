@@ -5,7 +5,6 @@ import emailjs from "emailjs-com";
 import * as yup from "yup";
 import { MdOutlineEmail } from "react-icons/md";
 import { FaPhoneFlip, FaWhatsapp } from "react-icons/fa6";
-import { title } from "process";
 
 const CONTACT_ASSETS = [
   {

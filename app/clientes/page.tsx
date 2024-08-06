@@ -1,25 +1,4 @@
 import Image from "next/image";
-import Client1 from "public/static/cliente1.png";
-import Client2 from "public/static/sindivet_logo.png";
-import Client3 from "public/static/cliente3.png";
-import Client4 from "public/static/cliente4.png";
-import Client5 from "public/static/cliente5.png";
-import Client6 from "public/static/cliente6.png";
-import Client7 from "public/static/cliente7.png";
-import Client8 from "public/static/cliente8.png";
-
-import Brand1 from "public/static/acer.png";
-import Brand2 from "public/static/asus.png";
-import Brand3 from "public/static/microsoft.png";
-import Brand4 from "public/static/samsung.png";
-import Brand5 from "public/static/lenovo.png";
-import Brand6 from "public/static/amd.png";
-import Brand7 from "public/static/3com.png";
-import Brand8 from "public/static/compaq.png";
-import Brand9 from "public/static/hp.png";
-import Brand10 from "public/static/ibm.png";
-import Brand12 from "public/static/adobe.png";
-import Brand13 from "public/static/dell.png";
 
 export default function ClientsPage() {
   return (
@@ -29,42 +8,42 @@ export default function ClientsPage() {
       </h1>
       <div className="flex flex-wrap items-center justify-center gap-10 mt-10">
         <Image
-          src={Client1}
+          src="/static/cliente1.png"
           alt="Cliente de USS Informática"
           className="w-40 xl:w-44"
         />
         <Image
-          src={Client2}
+          src="/static/sindivet_logo.png"
           alt="Cliente de USS Informática"
           className="w-40 xl:w-44"
         />
         <Image
-          src={Client3}
+          src="/static/cliente3.png"
           alt="Cliente de USS Informática"
           className="w-40 xl:w-44"
         />
         <Image
-          src={Client4}
+          src="/static/cliente4.png"
           alt="Cliente de USS Informática"
           className="w-40 xl:w-44"
         />
         <Image
-          src={Client5}
+          src="/static/cliente5.png"
           alt="Cliente de USS Informática"
           className="w-40 xl:w-44"
         />
         <Image
-          src={Client6}
+          src="/static/cliente6.png"
           alt="Cliente de USS Informática"
           className="w-40 xl:w-44"
         />
         <Image
-          src={Client7}
+          src="/static/cliente7.png"
           alt="Cliente de USS Informática"
           className="w-40 xl:w-44"
         />
         <Image
-          src={Client8}
+          src="/static/cliente8.png"
           alt="Cliente de USS Informática"
           className="w-40 xl:w-44"
         />
@@ -74,62 +53,62 @@ export default function ClientsPage() {
       </h1>
       <div className="flex flex-wrap items-center justify-center gap-10 mt-10">
         <Image
-          src={Brand1}
+          src="/static/acer.png"
           alt="Marca especialista de USS Informática"
           className="w-40 xl:w-44"
         />
         <Image
-          src={Brand2}
+          src="/static/asus.png"
           alt="Marca especialista de USS Informática"
           className="w-40 xl:w-44"
         />
         <Image
-          src={Brand3}
+          src="/static/microsoft.png"
           alt="Marca especialista de USS Informática"
           className="w-40 xl:w-44"
         />
         <Image
-          src={Brand4}
+          src="/static/samsung.png"
           alt="Marca especialista de USS Informática"
           className="w-40 xl:w-44"
         />
         <Image
-          src={Brand5}
+          src="/static/lenovo.png"
           alt="Marca especialista de USS Informática"
           className="w-40 xl:w-44"
         />
         <Image
-          src={Brand6}
+          src="/static/amd.png"
           alt="Marca especialista de USS Informática"
           className="w-40 xl:w-44"
         />
         <Image
-          src={Brand7}
+          src="/static/3com.png"
           alt="Marca especialista de USS Informática"
           className="w-40 xl:w-44"
         />
         <Image
-          src={Brand8}
+          src="/static/compaq.png"
           alt="Marca especialista de USS Informática"
           className="w-40 xl:w-44"
         />
         <Image
-          src={Brand9}
+          src="/static/hp.png"
           alt="Marca especialista de USS Informática"
           className="w-40 xl:w-44"
         />
         <Image
-          src={Brand10}
+          src="/static/ibm.png"
           alt="Marca especialista de USS Informática"
           className="w-40 xl:w-44"
         />
         <Image
-          src={Brand12}
+          src="/static/adobe.png"
           alt="Marca especialista de USS Informática"
           className="w-40 xl:w-44"
         />
         <Image
-          src={Brand13}
+          src="/static/dell.png"
           alt="Marca especialista de USS Informática"
           className="w-40 xl:w-44"
         />

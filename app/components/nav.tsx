@@ -3,7 +3,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
-import Logo from "public/static/logo-uss-icon-com-info.png";
 
 const navItems = {
   "/": {
@@ -31,7 +30,7 @@ export function Navbar() {
         >
           <Image
             alt="Logo de USS Informática"
-            src={Logo}
+            src="/static/logo-uss-icon-com-info.png"
             width={150}
             height={150}
           />
@@ -97,7 +96,7 @@ export function Navbar() {
                     >
                       <Image
                         alt="Logo de USS Informática"
-                        src={Logo}
+                        src="/static/logo-uss-icon-com-info.png"
                         width={100}
                         height={100}
                       />

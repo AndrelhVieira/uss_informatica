@@ -1,45 +1,37 @@
 import Image from "next/image";
-import Brand1 from "public/static/acer.png";
-import Brand2 from "public/static/3com.png";
-import Brand3 from "public/static/amd.png";
-import Brand4 from "public/static/asus.png";
-import Client5 from "public/static/cliente1.png";
-import Client6 from "public/static/cliente3.png";
-import Client7 from "public/static/cliente5.png";
-import Client8 from "public/static/cliente7.png";
 import Link from "next/link";
 
 const CLIENTS_ASSETS = [
   {
-    src: Brand1,
+    src: "/static/acer.png",
     altText: "Logo da Acer",
   },
   {
-    src: Brand2,
+    src: "/static/3com.png",
     altText: "Logo da 3com",
   },
   {
-    src: Brand3,
+    src: "/static/amd.png",
     altText: "Logo da AMD",
   },
   {
-    src: Brand4,
+    src: "/static/asus.png",
     altText: "Logo da Asus",
   },
   {
-    src: Client5,
+    src: "/static/cliente1.png",
     altText: "Logo do grupo Interalli",
   },
   {
-    src: Client6,
+    src: "static/cliente3.png",
     altText: "Logo de Altair dos Santos",
   },
   {
-    src: Client7,
+    src: "/static/cliente5.png",
     altText: "Logo de Originale",
   },
   {
-    src: Client8,
+    src: "/static/cliente7.png",
     altText: "Logo de Liderauto",
   },
 ];

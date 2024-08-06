@@ -1,7 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-import Logo from "public/static/logo-uss-icon-com-info.png";
-import DevLogo from "public/static/andrevieira.png";
 
 const footerItems = {
   "/": {
@@ -42,7 +40,7 @@ export default function Footer() {
               </div>
               <div className="flex flex-col md:flex-row items-center mb-5">
                 <Image
-                  src={Logo}
+                  src="/static/logo-uss-icon-com-info.png"
                   alt="Logo de USS Informática"
                   width={300}
                   height={300}
@@ -56,7 +54,7 @@ export default function Footer() {
               </div>
               <div className="flex flex-col items-center mt-10 gap-5">
                 <Image
-                  src={DevLogo}
+                  src="/static/andrevieira.png"
                   alt="Logo de André Luiz Vieira"
                   width={300}
                   height={300}
