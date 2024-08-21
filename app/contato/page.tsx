@@ -112,10 +112,12 @@ const ContactPage = () => {
   return (
     <section className="px-4 pb-16 md:px-24 lg:px-8 lg:pb-20">
       <div className="my-6">
-        <div className="grid sm:grid-cols-2 items-center gap-16 p-8 mx-auto max-w-4xl bg-background shadow-[0_2px_10px_-3px_rgba(6,81,237,0.3)] rounded-md text-secondary font-[sans-serif]">
+        <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-16 p-8 mx-auto max-w-4xl bg-background shadow-[0_2px_10px_-3px_rgba(6,81,237,0.3)] rounded-md text-secondary font-[sans-serif]">
           <div>
-            <h1 className="text-3xl font-extrabold">Deixe sua mensagem</h1>
-            <p className="text-sm text-gray-400 mt-3">
+            <h1 className="text-3xl font-extrabold text-center">
+              Deixe sua mensagem
+            </h1>
+            <p className="text-sm text-gray-400 mt-3 text-justify">
               Estamos aqui para ajudar! Se você tem alguma dúvida, precisa de um
               orçamento, ou quer saber mais sobre nossos serviços, preencha o
               formulário abaixo. Nossa equipe entrará em contato com você o mais
@@ -128,7 +130,10 @@ const ContactPage = () => {
                 {CONTACT_ASSETS.filter(
                   (contact) => contact.type === "mail"
                 ).map((mail) => (
-                  <li className="flex items-center mb-3" key={mail.value}>
+                  <li
+                    className="flex items-center mb-3 break-words"
+                    key={mail.value}
+                  >
                     <div className="bg-primary h-10 w-10 rounded-full flex items-center justify-center shrink-0 text-background text-2xl">
                       <MdOutlineEmail />
                     </div>

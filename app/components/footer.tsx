@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 
 const footerItems = {
@@ -29,7 +28,7 @@ export default function Footer() {
                     return (
                       <Link
                         key={path}
-                        href="path"
+                        href={path}
                         className="text-gray-600 hover:text-gray-900"
                       >
                         {name}
@@ -39,7 +38,7 @@ export default function Footer() {
                 </div>
               </div>
               <div className="flex flex-col md:flex-row items-center mb-5">
-                <Image
+                <img
                   src="/static/logo-uss-icon-com-info.png"
                   alt="Logo de USS Informática"
                   width={300}
@@ -53,7 +52,7 @@ export default function Footer() {
                 </p>
               </div>
               <div className="flex flex-col items-center mt-10 gap-5">
-                <Image
+                <img
                   src="/static/andrevieira.png"
                   alt="Logo de André Luiz Vieira"
                   width={300}

@@ -64,15 +64,15 @@ export const Services = () => {
           </div>
         ))}
       </div>
-      <div className="w-full   bg-secondary shadow-xl shadow-secondary py-10 px-20 flex justify-between items-center">
-        <p className=" text-background">
+      <div className="w-full flex-col bg-secondary shadow-xl shadow-secondary py-10 px-20 flex justify-between items-center lg:flex-row gap-5">
+        <p className=" text-background text-center">
           <span className="text-3xl font-medium">
             Gostou e quer solicitar um orçamento ou pedido?
           </span>
         </p>
         <Link
           href="/contato"
-          className="px-5 py-3  font-medium text-background shadow-xl hover:bg-background duration-150 bg-primary rounded-sm hover:text-secondary"
+          className="px-5 py-3  font-medium text-background shadow-xl hover:bg-background duration-150 bg-primary rounded-sm hover:text-secondary text-center"
         >
           Entre em Contato
         </Link>

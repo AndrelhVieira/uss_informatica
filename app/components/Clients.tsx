@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 
 const CLIENTS_ASSETS = [
@@ -44,7 +43,7 @@ export const Clients = () => {
       </h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-rows-2 lg:grid-cols-4 gap-10 mt-10">
         {CLIENTS_ASSETS.map((client) => (
-          <Image
+          <img
             src={client.src}
             alt={client.altText}
             key={client.altText}
@@ -54,9 +53,9 @@ export const Clients = () => {
           />
         ))}
       </div>
-      <div className="flex justify-center">
+      <div className="flex justify-center mt-10">
         <Link
-          href="/clients"
+          href="/clientes"
           className="inline-flex self-center items-center justify-center mx-auto h-12 px-6 font-medium tracking-wide transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none bg-primary text-background"
           aria-label="Contato"
           title="Contato"
