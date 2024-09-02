@@ -38,13 +38,13 @@ export const Banner = () => {
             >
               Serviços
             </Link>
-            <a
+            <Link
               href="/contato"
               aria-label=""
               className="inline-flex items-center font-semibold text-secondary transition-colors duration-200 hover:text-deep-purple-accent-700"
             >
               Contato
-            </a>
+            </Link>
           </div>
         </div>
       </div>
