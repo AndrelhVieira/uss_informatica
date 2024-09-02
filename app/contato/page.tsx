@@ -115,14 +115,15 @@ const ContactPage = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-16 p-8 mx-auto max-w-4xl bg-background shadow-[0_2px_10px_-3px_rgba(6,81,237,0.3)] rounded-md text-secondary font-[sans-serif]">
           <div>
             <h1 className="text-3xl font-extrabold text-center">
-              Deixe sua mensagem
+              Entre em contato
             </h1>
             <p className="text-sm text-gray-400 mt-3 text-justify">
               Estamos aqui para ajudar! Se você tem alguma dúvida, precisa de um
-              orçamento, ou quer saber mais sobre nossos serviços, preencha o
-              formulário abaixo. Nossa equipe entrará em contato com você o mais
-              rápido possível. Queremos ouvir você e encontrar a melhor solução
-              para suas necessidades. Fale conosco hoje mesmo!
+              orçamento, quer saber mais sobre nossos serviços, ou queira abrir
+              um suporte técnico, preencha o formulário. Nossa equipe entrará em
+              contato com você o mais rápido possível. Queremos ouvir você e
+              encontrar a melhor solução para suas necessidades. Fale conosco
+              hoje mesmo!
             </p>
             <div className="mt-12">
               <h2 className="text-lg font-extrabold">Emails</h2>
