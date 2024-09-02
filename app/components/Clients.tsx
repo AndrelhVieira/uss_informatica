@@ -1,37 +1,46 @@
+import { ClientLogoType } from "app/clientes/page";
 import Link from "next/link";
 
-const CLIENTS_ASSETS = [
+const CLIENTS_ASSETS: ClientLogoType[] = [
   {
     src: "/static/acer.png",
     altText: "Logo da Acer",
+    style: "w-48 xl:w-52",
   },
   {
     src: "/static/3com.png",
     altText: "Logo da 3com",
+    style: "w-44 xl:w-48",
   },
   {
     src: "/static/amd.png",
     altText: "Logo da AMD",
+    style: "w-48 xl:w-52",
   },
   {
     src: "/static/asus.png",
     altText: "Logo da Asus",
+    style: "w-48 xl:w-52",
   },
   {
-    src: "/static/cliente1.png",
+    src: "/static/Logo_Interalli_Positiva_Principal.png",
     altText: "Logo do grupo Interalli",
+    style: "w-52 xl:w-56",
   },
   {
     src: "/static/cliente3.png",
     altText: "Logo de Altair dos Santos",
+    style: "w-48 xl:w-52",
   },
   {
     src: "/static/cliente5.png",
     altText: "Logo de Originale",
+    style: "w-48 xl:w-52",
   },
   {
     src: "/static/cliente7.png",
     altText: "Logo de Liderauto",
+    style: "w-48 xl:w-52",
   },
 ];
 
@@ -41,13 +50,15 @@ export const Clients = () => {
       <h1 className="font-bold text-3xl text-center">
         Empresas e marcas que atendo
       </h1>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-rows-2 lg:grid-cols-4 gap-10 mt-10">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-rows-2 lg:grid-cols-4 gap-10 mt-10 items-center">
         {CLIENTS_ASSETS.map((client) => (
           <img
             src={client.src}
             alt={client.altText}
             key={client.altText}
-            className="object-fill max-w-48 mx-auto"
+            className={`object-fill max-w-48 mx-auto 
+              ${client.style}
+              `}
             width={100}
             height={100}
           />
