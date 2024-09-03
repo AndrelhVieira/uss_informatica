@@ -1,3 +1,5 @@
+import ClientList from "app/components/ClientsList";
+
 export type ClientLogoType = {
   src: string;
   altText: string;
@@ -129,6 +131,9 @@ export default function ClientsPage() {
           />
         ))}
       </div>
+
+      <ClientList />
+
       <h1 className="text-center text-3xl font-bold mt-10">
         Marcas em que Somos Especialistas
       </h1>
